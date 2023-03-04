@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:one_drop/custom_widgets/Buttons/purpleButton.dart';
-import 'package:one_drop/screens/test.dart';
+import 'package:one_drop/screens/signUp.dart';
+import 'package:one_drop/screens/singnIn.dart';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({Key? key}) : super(key: key);
@@ -39,7 +40,9 @@ class IntroScreen extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 50.0,),
+                  padding: const EdgeInsets.only(
+                    top: 50.0,
+                  ),
                   child: SizedBox(
                     width: screenWidth,
                     height: screenHeight * 0.7,
@@ -75,12 +78,25 @@ class IntroScreen extends StatelessWidget {
                           ),
                         ),
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const SignIn(),
+                              ),
+                            );
+                          },
                           child: const Text('Have an account? Sign in'),
                         ),
                         PurpleButton(
                           buttonText: "Sign up",
                           onPress: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const SignUp(),
+                              ),
+                            );
                           },
                         ),
                       ],

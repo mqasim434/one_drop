@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:one_drop/custom_widgets/Buttons/purpleButton.dart';
+import 'package:one_drop/screens/singnIn.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);
@@ -49,6 +50,12 @@ class _SignUpState extends State<SignUp> {
                               padding: EdgeInsets.only(left: 50.0, right: 50),
                               child: TextButton(
                                 onPressed: (){
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => const SignIn(),
+                                    ),
+                                  );
                                 },
                                 child: const Text(
                                   'Sign In',
@@ -163,7 +170,12 @@ class _SignUpState extends State<SignUp> {
                   child: PurpleButton(
                     buttonText: 'Create Account',
                     onPress: () {
-                      print('HELLO');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SignIn(),
+                        ),
+                      );
                     },
                   ),
                 ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:one_drop/custom_widgets/Buttons/purpleButton.dart';
+import 'package:one_drop/screens/main_screens/homePage.dart';
 
 class SignInWithEmployeeCode extends StatelessWidget {
   const SignInWithEmployeeCode({Key? key}) : super(key: key);
@@ -87,7 +88,12 @@ class SignInWithEmployeeCode extends StatelessWidget {
                 PurpleButton(
                   buttonText: 'Continue',
                   onPress: () {
-                    print('HELLO');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const HomePage(),
+                      ),
+                    );
                   },
                 ),
               ],

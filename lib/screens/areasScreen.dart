@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:one_drop/custom_widgets/Buttons/purpleButton.dart';
-import 'package:one_drop/custom_widgets/Buttons/bottomProgressBar.dart';
+import 'package:one_drop/custom_widgets/bottomProgressBar.dart';
 import 'package:one_drop/custom_widgets/checkBoxTile.dart';
 import 'package:one_drop/screens/conditionsScreen.dart';
 

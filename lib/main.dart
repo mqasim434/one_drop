@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:one_drop/screens/introScreen.dart';
-import 'package:one_drop/screens/test.dart';
 import 'screens/signUp.dart';
 import 'screens/signupOptions.dart';
 import 'screens/signInOptions.dart';
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      home: IntroScreen(),
       debugShowCheckedModeBanner: false,
       title: 'One Drop',
       theme: ThemeData(

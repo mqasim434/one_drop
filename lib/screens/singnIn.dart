@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:one_drop/custom_widgets/Buttons/blackButton.dart';
 import 'package:one_drop/custom_widgets/Buttons/purpleButton.dart';
+import 'package:one_drop/screens/main_screens/homePage.dart';
 
 class SignIn extends StatelessWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -44,7 +45,12 @@ class SignIn extends StatelessWidget {
                     buttonText: 'Sign in',
                     width: 180,
                     onPress: () {
-                      print('HELLO');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SignIn(),
+                        ),
+                      );
                     },
                   ),
                 ],
@@ -98,7 +104,12 @@ class SignIn extends StatelessWidget {
                     buttonText: 'Sign in',
                     width: 300,
                     onPress: () {
-                      print('HELLO');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const HomePage(),
+                        ),
+                      );
                     },
                   ),
                 ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:one_drop/custom_widgets/Buttons/blackButton.dart';
+import 'package:one_drop/screens/signUp.dart';
 
 class SignUpOptions extends StatelessWidget {
   const SignUpOptions({Key? key}) : super(key: key);
@@ -64,7 +65,12 @@ class SignUpOptions extends StatelessWidget {
                       buttonIcon: Icons.email,
                       width: 300,
                       onPress: (){
-                        print('HELLO');
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SignUp(),
+                          ),
+                        );
                       },
                     ),
                     BlackButton(
