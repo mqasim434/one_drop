@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:one_drop/custom_widgets/Buttons/purpleButton.dart';
 import 'package:one_drop/custom_widgets/bottomProgressBar.dart';
 import 'package:one_drop/custom_widgets/checkBoxTile.dart';
+import 'package:one_drop/screens/dateOfBirth.dart';
 
 class MoreConditions extends StatefulWidget {
   const MoreConditions({Key? key}) : super(key: key);
@@ -88,7 +89,12 @@ class _MoreConditionsState extends State<MoreConditions> {
                     buttonText: 'Continue',
                     width: 500,
                     onPress: () {
-                      print('HELLO');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => DateOfBirth(),
+                        ),
+                      );
                     },
                   ),
                   BottomProgressBar(progressWidth: 210),

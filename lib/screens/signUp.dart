@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:one_drop/custom_widgets/Buttons/purpleButton.dart';
 import 'package:one_drop/screens/singnIn.dart';
+import 'package:one_drop/screens/welcome.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);
@@ -173,7 +174,7 @@ class _SignUpState extends State<SignUp> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const SignIn(),
+                          builder: (context) => const WelcomeScreen(),
                         ),
                       );
                     },

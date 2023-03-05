@@ -54,7 +54,12 @@ class WelcomeScreen extends StatelessWidget {
                     buttonText: 'Continue',
                     width: 500,
                     onPress: () {
-                      print('HELLO');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => AreasToWork(),
+                        ),
+                      );
                     },
                   ),
                   BottomProgressBar(progressWidth: 100,),

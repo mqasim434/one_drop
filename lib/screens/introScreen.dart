@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:one_drop/custom_widgets/Buttons/purpleButton.dart';
 import 'package:one_drop/screens/signUp.dart';
+import 'package:one_drop/screens/signupOptions.dart';
 import 'package:one_drop/screens/singnIn.dart';
 
 class IntroScreen extends StatelessWidget {
@@ -82,7 +83,7 @@ class IntroScreen extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const SignIn(),
+                                builder: (context) => const SignUpOptions(),
                               ),
                             );
                           },
@@ -94,7 +95,7 @@ class IntroScreen extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const SignUp(),
+                                builder: (context) => const SignUpOptions(),
                               ),
                             );
                           },

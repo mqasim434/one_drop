@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:one_drop/custom_widgets/Buttons/purpleButton.dart';
 import 'package:one_drop/custom_widgets/bottomProgressBar.dart';
 import 'package:one_drop/custom_widgets/checkBoxTile.dart';
+import 'package:one_drop/screens/moreConditions.dart';
 
 class ConditionsScreen extends StatefulWidget {
   const ConditionsScreen({Key? key}) : super(key: key);
@@ -104,7 +105,12 @@ class _ConditionsScreenState extends State<ConditionsScreen> {
                     buttonText: 'Continue',
                     width: 500,
                     onPress: () {
-                      print('HELLO');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const MoreConditions(),
+                        ),
+                      );
                     },
                   ),
                   BottomProgressBar(progressWidth: 160),

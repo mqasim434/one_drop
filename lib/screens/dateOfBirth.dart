@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:one_drop/custom_widgets/Buttons/purpleButton.dart';
 import 'package:one_drop/custom_widgets/bottomProgressBar.dart';
 import 'package:bottom_picker/bottom_picker.dart';
+import 'package:one_drop/screens/importYourData.dart';
 
 class DateOfBirth extends StatefulWidget {
   @override
@@ -96,7 +97,12 @@ class _DateOfBirthState extends State<DateOfBirth> {
                     buttonText: 'Continue',
                     width: 500,
                     onPress: () {
-                      print('HELLO');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ImportYourData(),
+                        ),
+                      );
                     },
                   ),
                   BottomProgressBar(progressWidth: 280),

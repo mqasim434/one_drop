@@ -114,7 +114,12 @@ class _AreasToWorkState extends State<AreasToWork> {
                     buttonText: 'Continue',
                     width: 500,
                     onPress: () {
-                      print('HELLO');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ConditionsScreen(),
+                        ),
+                      );
                     },
                   ),
                   BottomProgressBar(progressWidth: 130),
